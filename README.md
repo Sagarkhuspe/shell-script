@@ -6,3 +6,5 @@ we will place all the file in serial order that gived you approch which one to t
 for authontication in github
 need to generate PAT token
 setting-----account-----profile
+
+need to be very careful doinng that
