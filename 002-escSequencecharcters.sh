@@ -10,4 +10,6 @@ echo line2
 
 echo -e "line3\nline4"
 
-#-e when you are using special character in echo command and always use double coloun.
+# Whenever you're using special characters , always enclose them in DOUBLE QUOTES
+# " "  : Double Quotes 
+# ' '  : Single Quotes
