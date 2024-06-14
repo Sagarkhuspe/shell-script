@@ -14,6 +14,8 @@
 
 # echo -e "\e[colurcodem i am printing colour \e[0m"
 # \e...\e[0m used for start and exit command.
+#31m  : start the colour
+#0m   : end the coloue.. if you are not mentioned it will extreme the colour
 
 echo -e "\e[33m i am printing colour \e[0m"
 
