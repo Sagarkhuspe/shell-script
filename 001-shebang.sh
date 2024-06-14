@@ -11,3 +11,6 @@
 echo is used to print 
 echo " hello world"
 
+echo line1
+echo line2
+echo line3
