@@ -15,4 +15,4 @@
 # echo -e "\e[colurcodem i am printing colour \e[0m"
 # \e...\e[0m used for start and exit command.
 
-cho -e "\e[33m i am printing colour \e[0m"
+echo -e "\e[33m i am printing colour \e[0m"
