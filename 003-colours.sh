@@ -10,7 +10,7 @@
 # Magenta           35                  45
 # Cyan              36                  46
 
-# Syntax to print colors
+# Syntax(m) to print colors
 
 # echo -e "\e[colurcodem i am printing colour \e[0m"
 # \e...\e[0m used for start and exit command.
