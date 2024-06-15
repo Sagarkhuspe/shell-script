@@ -24,3 +24,9 @@ echo " the value of variable b is ${b}"
 
 #how to print colour in variables
 echo -e " the value of variable b is\e[32m $b \e[0m"
+
+# always remember when ypu are running any script give a right path.
+
+# if variable is not defined. it will show empty. that not aceeptable at any cost.
+echo " the value of variable d is $d"
+
