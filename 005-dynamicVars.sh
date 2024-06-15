@@ -6,3 +6,6 @@
 
 DATE="$(date +%F)"
 NO_OF_SESSIONS="$(who|wc -l)"
+
+echo -e "Todays date is ${DATE}" 
+echo -e "Total Opened Sessions Are $NO_OF_SESSIONS"
