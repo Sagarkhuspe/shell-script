@@ -9,7 +9,7 @@
 
 a=10
 b=def
-
+custdata-"shipping"
 # In bash, everything will be considered as string by default.
 
 # How can we print a variable ?  $var
@@ -29,4 +29,12 @@ echo -e " the value of variable b is\e[32m $b \e[0m"
 
 # if variable is not defined. it will show empty. that not aceeptable at any cost.
 echo " the value of variable d is $d"
+
+
+#if you want delete same data give righ path other wise it will delte the directory.
+
+# rm -rf /data/prod/${CUSTDATA} ====> /data/prod/shipping
+# rm -rf /data/prod/${APPDATA} ====> /data/prod/
+
+
 
