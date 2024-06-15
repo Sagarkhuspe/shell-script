@@ -22,5 +22,5 @@ echo " the value of variable b is ${b}"
 
 #echo "$a" or  echo {$a} we can use both. if one is not working then user another cammand.
 
-how to print colour in variables
+#how to print colour in variables
 echo -e " the value of variable b is\e[32m $b \e[0m"
