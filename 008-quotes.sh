@@ -6,5 +6,5 @@
 a=100
 echo $?
 echo '$?'
-echo "value of a is"
-echo 'value of a is'
+echo "value of is"
+echo 'value of is'
