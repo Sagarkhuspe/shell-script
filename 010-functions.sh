@@ -16,3 +16,25 @@ f               # calling functions
 echo "today we learn bash"
 echo "i am sagar"
 f
+
+#can we call function from another function ?? YES
+sample(){
+    echo "hey i sample"
+    echo "thank you"
+    f
+}
+
+
+sample
+
+stat() {
+    echo "Number of opened sessions $(who|Wc -l)"
+    echo "Number of opened sessions $(who|wc -l)"
+    echo "Todays date is $(date +%F)"
+    echo "Load Average in last 1 minute : $(uptime | awk -F : '{print $NF}' | awk -F ',' '{print $1}')" 
+}
+stat
+sleep 3
+stat 
+sleep 3
+stat 
