@@ -11,4 +11,4 @@ b=20
 c=30
 echo "value of a is $a"
 comments
-echo "value of bi= is $b"
+echo "value of b is $b"
