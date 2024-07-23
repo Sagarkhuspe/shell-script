@@ -8,7 +8,6 @@
 #4)Functions              -->(you have common pattern and this pattern using function can effictively)
 
 #how to declare function
-
 f() {
     echo hello
 }
