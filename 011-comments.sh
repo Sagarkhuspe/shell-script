@@ -9,6 +9,6 @@ echo printing multiline comments
 a=10
 b=20
 c=30
-echo value of a is $a
+echo "value of a is $a"
 comments
 echo "value of b is $b"
