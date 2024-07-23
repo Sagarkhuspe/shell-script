@@ -7,7 +7,12 @@
 #3)Shell built-in commands     -->(cd, pwd, exit, export, alias)
 #4)Functions              -->(you have common pattern and this pattern using function can effictively)
 
-#how to declare function
+#how to declare function?
 f() {
     echo hello
 }
+# how to call a function?
+f               # calling functions
+echo "today we learn bash"
+echo "i am sagar"
+f
