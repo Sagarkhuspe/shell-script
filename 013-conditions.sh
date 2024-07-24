@@ -15,15 +15,15 @@ Action=$1
 
 case $ACTION in 
     start)
-        echo -e "\e[32m Starting Dispatch Service \e[0m" 
+        echo -e "Starting Dispatch Service" 
         
         ;;
     stop)
-        echo -e "\e[31m Stopping Dispatch Service \e[0m" 
+        echo -e "Stopping Dispatch Service" 
       
         ;;
     restart)
-        echo -e "\e[33m Restarting Dispatch Service \e[0m" 
+       echo -e "restarting Dispatch Service" 
       
 esac 
      
