@@ -20,7 +20,7 @@ case $Action in
 
       stop)
       echo -e "\e[33m stopping the dispatch service  \e[0m" ;;
-      e
+      
       restart)
       echo -e "\e[34m restarting the dispatch service  \e[0m" ;;
 
