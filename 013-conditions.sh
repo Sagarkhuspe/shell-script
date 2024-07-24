@@ -11,6 +11,8 @@
 
 #esac
 
+#exit command mostly is used what happened in past. it also used exit then then is self.
+
 Action=$1
 
 case $Action in
