@@ -13,17 +13,14 @@
 
 Action=$1
 
-case $ACTION in 
-    start)
-        echo -e "Starting Dispatch Service" 
-        
-        ;;
-    stop)
-        echo -e "Stopping Dispatch Service" 
-      
-        ;;
-    restart)
-       echo -e "restarting Dispatch Service" 
-      
-esac 
+case $Action in
+      start)
+      echo "starting the dispatch service" ;;
+
+      stop)
+      echo "stopping the dispatch service" ;;
      
+      restart)
+      echo "restarting the dispatch service" ;;
+
+esac      
