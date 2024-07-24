@@ -11,7 +11,7 @@
 
 #esac
 
-#exit command mostly is used what happened in past. it also used exit then then is self.
+#exit command mostly is used what happened in past. it also used exit then then is self.(execution stop there)
 
 Action=$1
 
