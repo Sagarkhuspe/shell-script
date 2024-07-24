@@ -24,11 +24,6 @@ case $ACTION in
         ;;
     restart)
         echo -e "\e[33m Restarting Dispatch Service \e[0m" 
-        
-        ;;
-    *)
-        echo -e "\e[35m Valid options are: start  stop  restart   only \e[0m"
-        echo -e "\e[33m Usage: \e[0m \n\tbash conditions.sh  start"
-       
+      
 esac 
      
