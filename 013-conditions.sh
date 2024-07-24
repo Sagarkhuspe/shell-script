@@ -15,8 +15,8 @@ Action=$1
 
 case $Action in
       start)
-      echo -e "\e[32m starting the dispatch service  \e[0m" ;;
-      exit 0
+      echo -e "\e[32m starting the dispatch service  \e[0m"
+      exit 0 ;;
 
       stop)
       echo -e "\e[33m stopping the dispatch service  \e[0m" ;;
