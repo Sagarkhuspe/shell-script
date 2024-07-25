@@ -22,3 +22,5 @@
 for x in 10 20 30 40 ; do
    echo  -e "value of is $x \n\t"
 done
+
+
