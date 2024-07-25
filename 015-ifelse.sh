@@ -12,7 +12,7 @@ elif [ "$Action" = "stop"]  ; then
 echo -e "\e[33m stopping dispatch service only \e[0m"
 exit 1
 
-elif [ "$Action" = "restart"]  ; then
+elif [ "$Action" = "restart" ]  ; then
 echo -e "\e[34m restarting dispatch service only \e[0m"
 exit 2
 
