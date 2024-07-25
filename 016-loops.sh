@@ -20,5 +20,5 @@
 #  done
 
 for x in 10 20 30 40 ; do
-   echo "value of is $x \n\t"
+   echo "value of is $x\n\t"
 done
