@@ -8,7 +8,7 @@ if [ "$Action" = "start" ] ; then
 echo -e "\e[32m starting dispatch service only \e[0m"
 exit 0
 
-elif [ "$Action" = "stop"]  ; then
+elif [ "$Action" = "stop" ]  ; then
 echo -e "\e[33m stopping dispatch service only \e[0m"
 exit 1
 
