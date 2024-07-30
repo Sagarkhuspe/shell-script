@@ -15,7 +15,7 @@ fi
 
 echo "installing nginix web server"
 dnf install nginx -y               &>> /tmp/fronend.log
-if [$? eq 0 ] ; then
+if [ $? eq 0 ] ; then
      echo -n "\e[32m success \e[0m"
 else 
   echo -n "\e[32m failure \e[0m"
@@ -24,7 +24,7 @@ fi
 
 echo "enable the service"
 systemctl enable nginx              &>> /tmp/fronend.log
-if [$? eq 0 ] ; then
+if [ $? eq 0 ] ; then
      echo -n "\e[32m success \e[0m"
 else 
   echo -n "\e[32m failure \e[0m"
@@ -33,7 +33,7 @@ fi
 
 echo "starting web server"
 systemctl enable nginx              &>> /tmp/fronend.log
-if [$? eq 0 ] ; then
+if [ $? eq 0 ] ; then
      echo -n "\e[32m success \e[0m"
 else 
   echo -n "\e[32m failure \e[0m"
