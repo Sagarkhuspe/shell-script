@@ -11,7 +11,7 @@
 #exit 2
 
 
-IID=$(id -u)
+ID=$(id -u)
 if [ $ID -ne 0 ] ; then 
     echo -e "\e[31m This script is expected to run with sudo or as a root user \e[0m   \n\t Ex:  bash scriptName compName"
     exit 1
