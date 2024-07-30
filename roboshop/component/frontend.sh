@@ -26,7 +26,7 @@ stat () {
 else 
   echo -n "\e[33m failure \e[0m"
 exit 2
-
+fi
 
 echo "installing nginix web server"
 dnf install nginx -y               &>> $LOGFILE
@@ -39,3 +39,8 @@ stat $?
 echo "starting web server"
 systemctl enable nginx              &>> $LOGFILE
 stat $?
+
+
+
+
+
