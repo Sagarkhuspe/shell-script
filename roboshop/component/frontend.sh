@@ -28,15 +28,15 @@ stat () {
 
 fi
 }
-echo "installing nginix web server"
+echo -e "installing nginix web server"
 dnf install nginx -y               &>> $LOGFILE
 stat $?
 
-echo "enable the service"
+echo -e "enable the service"
 systemctl enable nginx              &>> $LOGFILE
 stat $?
 
-echo "starting web server"
+echo -e "starting web server"
 systemctl enable nginx              &>> $LOGFILE
 stat $?
 
