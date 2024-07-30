@@ -21,13 +21,13 @@ fi
 LOGFILE="/tmp/fronend.log"
 
 stat () {
-    if [ $1 eq 0 ] ; then
-     echo -n "\e[32m success \e[0m"
-else 
-  echo -n "\e[33m failure \e[0m"
-exit 2
-fi
+    if [ $1 -eq 0 ] ; then
+         echo -n "\e[32m success \e[0m"
+    else 
+         echo -n "\e[33m failure \e[0m"
 
+fi
+}
 echo "installing nginix web server"
 dnf install nginx -y               &>> $LOGFILE
 stat $?
