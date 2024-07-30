@@ -9,6 +9,8 @@ if [ $ID -ne 0 ] ; then
     echo -e "\e[33m this script expected to run with sudo or root user \e[0m   \n\t ex: bash scriptname compName"
 exit 1
 fi
+
+
 echo "installing nginix web server"
 dnf install nginx -y
 
