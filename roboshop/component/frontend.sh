@@ -11,12 +11,11 @@
 #exit 2
 
 
-ID=$(id -u)
-
-if [ $ID -ne 0 ] ; then
-    echo -e "\e[33m this script expected to run with sudo or root user \e[0m   \n\t ex: bash scriptname compName"
-exit 1
-fi
+IID=$(id -u)
+if [ $ID -ne 0 ] ; then 
+    echo -e "\e[31m This script is expected to run with sudo or as a root user \e[0m   \n\t Ex:  bash scriptName compName"
+    exit 1
+fi 
 
 LOGFILE="/tmp/fronend.log"
 
