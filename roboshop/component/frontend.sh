@@ -12,9 +12,10 @@ if [ $ID -ne 0 ] ; then
 exit 1
 fi
 
+LOGFILE="/tmp/fronend.log"
 
 echo "installing nginix web server"
-dnf install nginx -y               &>> /tmp/fronend.log
+dnf install nginx -y               &>> $LOGFILE
 if [ $? eq 0 ] ; then
      echo -n "\e[32m success \e[0m"
 else 
@@ -23,7 +24,7 @@ exit 2
 fi
 
 echo "enable the service"
-systemctl enable nginx              &>> /tmp/fronend.log
+systemctl enable nginx              &>> $LOGFILE
 if [ $? eq 0 ] ; then
      echo -n "\e[32m success \e[0m"
 else 
@@ -32,7 +33,7 @@ exit 2
 fi
 
 echo "starting web server"
-systemctl enable nginx              &>> /tmp/fronend.log
+systemctl enable nginx              &>> $LOGFILE
 if [ $? eq 0 ] ; then
      echo -n "\e[32m success \e[0m"
 else 
