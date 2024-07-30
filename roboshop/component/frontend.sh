@@ -22,9 +22,9 @@ LOGFILE="/tmp/fronend.log"
 
 stat () {
     if [ $1 -eq 0 ] ; then
-         echo -n "\e[32m success \e[0m"
+         echo -e "\e[32m success \e[0m"
     else 
-         echo -n "\e[33m failure \e[0m"
+         echo -e "\e[33m failure \e[0m"
 
 fi
 }
