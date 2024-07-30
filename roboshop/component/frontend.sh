@@ -1,3 +1,10 @@
 #!/bin/bash
 
-echo -e "\e[33m i am frontend component \e[0m"
+echo "installing nginix web server"
+dnf install nginx -y
+
+echo "enable the service"
+systemctl enable nginx
+
+echo "starting web server"
+systemctl enable nginx
