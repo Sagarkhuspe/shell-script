@@ -5,4 +5,4 @@
 #    bash component/catalogue.sh 
 # we dont want this type hard coding so we can use
 
-bash component/$1
+bash component/$1.sh
