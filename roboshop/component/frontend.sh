@@ -55,8 +55,8 @@ unzip /tmp/frontend.zip    &>> $LOGFILE
 stat $?
 
 echo -n "configuration the $component "
- mv {$component}-main/* .    &>> $LOGFILE
- mv static/* .     &>> $LOGFILE
- rm -rf {$component}-main README.md   &>> $LOGFILE
- mv localhost.conf /etc/nginx/default.d/roboshop.conf   &>> $LOGFILE
+ mv {$component}-main/* .   
+ mv static/* .     
+ rm -rf {$component}-main README.md   
+ mv localhost.conf /etc/nginx/default.d/roboshop.conf   
  Stat $?
