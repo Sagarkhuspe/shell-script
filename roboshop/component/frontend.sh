@@ -51,7 +51,7 @@ rm -rf * &>> $LOGFILE
 stat $?
 
 echo -n "extracting the $component component"
-unzip /tmp/frontend.zip    &>> $LOGFILE
+unzip /tmp/frontend.zip    
 stat $?
 
 echo -n "configuration the $component "
