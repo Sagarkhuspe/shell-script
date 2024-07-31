@@ -40,23 +40,22 @@ echo -n "starting web server"
 systemctl enable nginx              &>> $LOGFILE
 stat $?
 
-echo -n " downloading the $component components"
-curl -s -L -o /tmp/$component.zip "https://github.com/stans-robot-project/$component/archive/main.zip"
-rm -rf *  &>> $LOGFILE
-stat $?
+echo -n "Downloading the $COMPONENT Component: "
+curl -s -L -o /tmp/$COMPONENT.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"
+stat $? 
 
-echo -n "performing $component clean up"
-cd /usr/share/nginx/html
-rm -rf * &>> $LOGFILE
-stat $?
+echo -n "Performing $COMPONENT Cleanup :"
+cd /usr/share/nginx/html 
+rm -rf * &>>  $LOGFILE
+stat $? 
 
-echo -n "extracting the $component component"
-unzip /tmp/frontend.zip    &>> $LOGFILE
-stat $?
+echo -n "Extracting $COMPONENT :"
+unzip /tmp/frontend.zip   &>>  $LOGFILE 
+stat $? 
 
-echo -n "configuration the $component "
- mv {$component}-main/* .   
- mv static/* .     
- rm -rf {$component}-main README.md   
- mv localhost.conf /etc/nginx/default.d/roboshop.conf   
- Stat $?
+echo -n "Configuring $COMPONENT :"
+mv ${COMPONENT}-main/* .   &>>  $LOGFILE
+mv static/* .        &>>  $LOGFILE
+rm -rf ${COMPONENT}-main README.md    &>>  $LOGFILE  
+mv localhost.conf /etc/nginx/default.d/roboshop.conf
+stat $?
