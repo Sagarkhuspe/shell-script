@@ -6,6 +6,7 @@ SGID="sg-0d7a60a25e15e3cde"
 COMPONENT=$1
 if [-z $1] ; then
 echo -e "\e[31m component name is needed: \e[0m"
+echo -e "\e[36m \t\t Example Usage : \e[0m  bash launch-ec2 dev ratings"
 exit 1
 fi
 
