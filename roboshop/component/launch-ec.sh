@@ -1,4 +1,5 @@
 #!/bin/bash
+#aws s3 ls
 # this creatrs ec2 instances
 
 AMI_ID="ami-072983368f2a6eab5"
